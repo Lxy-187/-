@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57c279d-ad5e-48ec-9fe8-063d6f84866e" name="变更" comment="for test">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentSchedule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/coursedata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/userdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/GUIView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentSchedule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentSchedule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/MainView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -33,6 +49,20 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2NLyOXCPyzNs0RMSJKsivOr6XVH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -46,27 +76,31 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/java_program/StudentSchedule",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Java_Maven/untitled",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.StudentScheduleApp">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="StudentSchedule" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java_program\StudentSchedule\resources" />
+      <recent name="D:\java_program\StudentSchedule" />
+      <recent name="D:\java_program\StudentSchedule\src\com\lzw\studentschedule\resources" />
+      <recent name="D:\java_program\StudentSchedule\src\com\lzw\studentschedule\service" />
+      <recent name="D:\java_program\StudentSchedule\src\com\lzw\studentschedule\myresoures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GUIView.LoginView">
     <configuration name="StudentScheduleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
       <module name="StudentSchedule" />
@@ -80,10 +114,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GUIView.LoginView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule.view" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.view.GUIView" />
+      <option name="METHOD_NAME" value="LoginView" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentScheduleApp.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
+      <option name="METHOD_NAME" value="divide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentScheduleApp.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentScheduleApp.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
+      <option name="METHOD_NAME" value="testDivide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.GUIView.LoginView" />
+      <item itemvalue="JUnit.StudentScheduleApp.divide" />
+      <item itemvalue="JUnit.StudentScheduleApp.test" />
+      <item itemvalue="JUnit.StudentScheduleApp.testDivide" />
+      <item itemvalue="应用程序.StudentScheduleApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GUIView.LoginView" />
         <item itemvalue="应用程序.StudentScheduleApp" />
-        <item itemvalue="应用程序.Main" />
+        <item itemvalue="JUnit.StudentScheduleApp.testDivide" />
+        <item itemvalue="JUnit.StudentScheduleApp.divide" />
+        <item itemvalue="JUnit.StudentScheduleApp.test" />
       </list>
     </recent_temporary>
   </component>
@@ -110,8 +218,20 @@
       <workItem from="1680447365448" duration="4558000" />
       <workItem from="1680489222254" duration="4516000" />
       <workItem from="1680505621930" duration="7494000" />
-      <workItem from="1680597812552" duration="880000" />
+      <workItem from="1680597812552" duration="1772000" />
+      <workItem from="1680834115635" duration="3444000" />
+      <workItem from="1680837781461" duration="493000" />
+      <workItem from="1680838362315" duration="6641000" />
+      <workItem from="1680846639989" duration="40394000" />
     </task>
+    <task id="LOCAL-00001" summary="for test">
+      <created>1680599903402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680599903402</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +251,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="for test" />
     <option name="LAST_COMMIT_MESSAGE" value="for test" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

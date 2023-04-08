@@ -1,0 +1,23 @@
+[
+  {
+    "courseName": "计算机网络",
+    "courseTime": 8,
+    "courseDay": 1
+  },
+  {
+    "courseName": "计算机组成原理",
+    "courseTime": 9,
+    "courseDay": 1
+  },
+  {
+    "courseName": "学术英语",
+    "courseTime": 10,
+    "courseDay": 1
+  },
+  {
+    "courseName": "数据结构课设",
+    "courseTime": 9,
+    "courseDay": 2
+  }
+
+]

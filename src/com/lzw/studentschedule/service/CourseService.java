@@ -1,31 +1,36 @@
 package com.lzw.studentschedule.service;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.JSONReader;
 import com.lzw.studentschedule.domain.User;
+import java.io.*;
+import java.lang.reflect.Type;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.PriorityQueue;
+
 import com.lzw.studentschedule.domain.Course;
+import com.alibaba.fastjson.JSON;
 public class CourseService {
     HashMap<String,User> userMap = new HashMap<>();
     HashMap<String,Course> courseMap = new HashMap<>();
-    public void loadUserData(){
-        userMap.put("admin",new User("admin","admin","admin"));
-        userMap.put("user",new User("user","user","user"));
-    }
+    User user;
+    final String USER_DATA_PATH = "resources/userdata.json";
+    final String COURSE_DATA_PATH = "resources/coursedata.json";
 
-    public void loadCourseData(){
-        //课程名称，课程时间，课程地点，授课教师，上课周次，上课星期，上课节次
-        courseMap.put("Java",new Course("Java","2020-2021-1","A-101","张三","1-16","1","1-2"));
-        courseMap.put("C++",new Course("C++","2020-2021-1","A-102","李四","1-16","2","3-4"));
-        courseMap.put("Python",new Course("Python","2020-2021-1","A-103","王五","1-16","3","5-6"));
-        courseMap.put("C#",new Course("C#","2020-2021-1","A-104","赵六","1-16","4","7-8"));
-        courseMap.put("JavaScript",new Course("JavaScript","2020-2021-1","A-105","钱七","1-16","5","9-10"));
-    }
 
     public String login(String username, String password){
         if(userMap.containsKey(username) && userMap.get(username).getPassword().equals(password)){
+            user = userMap.get(username);
+            loadAllCourseData();
+            loadUserCourseData();
             return userMap.get(username).getRole();
         }else{
             return "";
         }
     }
+
     public void findCourse(String courseName){
         if(courseMap.containsKey(courseName)){
             courseMap.get(courseName).printCourse();
@@ -33,5 +38,59 @@ public class CourseService {
             System.out.println("The course does not exist");
         }
     }
+    public void loadUserData() {
+        User[] users = new User[0];
+        //将同目录下的userdata.json文件读取到userMap中
+        try {
+            String json = Files.readString(Paths.get(USER_DATA_PATH));
+            users = JSON.parseObject(json, User[].class);
 
+        } catch (FileNotFoundException e) {
+            System.out.println("学生用户数据文件不存在或者路径错误");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        for (User user : users) {
+            userMap.put(user.getUsername(), user);
+        }
+    }
+
+    public void loadAllCourseData(){
+        Course[] courses = new Course[0];
+        try {
+            String json = Files.readString(Paths.get(COURSE_DATA_PATH));
+            courses = JSON.parseObject(json, Course[].class);
+        } catch (FileNotFoundException e) {
+            System.out.println("课程数据文件不存在或者路径错误");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        for (Course course : courses) {
+            courseMap.put(course.getCourseName(), course);
+        }
+    }
+    public boolean loadUserCourseData(){
+        if(user == null)
+            return false;
+        else{
+            for(String courseName : user.getCourseselected()){
+                if(courseMap.containsKey(courseName)){
+                    user.addCourseToQueue(courseMap.get(courseName));
+                }
+            }
+            return true;
+        }
+
+    }
+    public void remindSecondDayCourse(){
+
+    }
+    public void remindTodayCourse(){
+        Course course;
+        PriorityQueue<Course> temp = new PriorityQueue<>(user.getCourses()[0]);
+        while(!temp.isEmpty()){
+            course = temp.poll();
+            System.out.println(course.getCourseTime() + ":" + course.getCourseName());
+        }
+    }
 }
