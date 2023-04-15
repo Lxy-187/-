@@ -1,7 +1,5 @@
 package com.lzw.studentschedule.domain;
 
-import org.junit.Test;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
@@ -71,8 +69,7 @@ public class User implements Serializable {
 }
 class Student extends User{
 
-
-
 }
 class Admin extends User{
+
 }

@@ -18,7 +18,10 @@ public class CourseService {
     User user;
     final String USER_DATA_PATH = "resources/userdata.json";
     final String COURSE_DATA_PATH = "resources/coursedata.json";
-
+    public CourseService(){
+        loadUserData();
+        loadAllCourseData();
+    }
 
     public String login(String username, String password){
         if(userMap.containsKey(username) && userMap.get(username).getPassword().equals(password)){
@@ -61,7 +64,7 @@ public class CourseService {
             String json = Files.readString(Paths.get(COURSE_DATA_PATH));
             courses = JSON.parseObject(json, Course[].class);
         } catch (FileNotFoundException e) {
-            System.out.println("课程数据文件不存在或者路径错误");
+            e.printStackTrace();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

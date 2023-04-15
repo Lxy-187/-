@@ -5,31 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c57c279d-ad5e-48ec-9fe8-063d6f84866e" name="变更" comment="for test">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/coursedata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/userdata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/GUIView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/LoginFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/GUIView$LoginPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/GUIView$MainPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/LoginFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentSchedule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentSchedule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/userdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/userdata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/StudentScheduleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/StudentScheduleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/utils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/GUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/GUIView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lzw/studentschedule/view/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/StudentScheduleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/StudentScheduleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/service/CourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/utils/MyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/utils/MyUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/GUIView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/GUIView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzw/studentschedule/view/MainView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,25 +69,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Java_Maven/untitled",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java_program/StudentSchedule&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java_program\StudentSchedule\resources" />
@@ -100,7 +97,20 @@
       <recent name="D:\java_program\StudentSchedule\src\com\lzw\studentschedule\myresoures" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GUIView.LoginView">
+  <component name="RunManager" selected="JUnit.GUIView.test">
+    <configuration name="JDialogExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.view.JDialogExample" />
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentScheduleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
       <module name="StudentSchedule" />
@@ -110,6 +120,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUIView.GUIViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentSchedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzw.studentschedule.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule.view" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.view.GUIView" />
+      <option name="METHOD_NAME" value="GUIViewTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,68 +156,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentScheduleApp.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GUIView.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentSchedule" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzw.studentschedule.*" />
+          <option name="PATTERN" value="com.lzw.studentschedule.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
-      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
-      <option name="METHOD_NAME" value="divide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentScheduleApp.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StudentSchedule" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzw.studentschedule.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
-      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
+      <option name="PACKAGE_NAME" value="com.lzw.studentschedule.view" />
+      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.view.GUIView" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentScheduleApp.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StudentSchedule" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzw.studentschedule.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lzw.studentschedule" />
-      <option name="MAIN_CLASS_NAME" value="com.lzw.studentschedule.StudentScheduleApp" />
-      <option name="METHOD_NAME" value="testDivide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.GUIView.GUIViewTest" />
+      <item itemvalue="JUnit.GUIView.test" />
       <item itemvalue="JUnit.GUIView.LoginView" />
-      <item itemvalue="JUnit.StudentScheduleApp.divide" />
-      <item itemvalue="JUnit.StudentScheduleApp.test" />
-      <item itemvalue="JUnit.StudentScheduleApp.testDivide" />
       <item itemvalue="应用程序.StudentScheduleApp" />
+      <item itemvalue="应用程序.JDialogExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GUIView.LoginView" />
+        <item itemvalue="JUnit.GUIView.test" />
         <item itemvalue="应用程序.StudentScheduleApp" />
-        <item itemvalue="JUnit.StudentScheduleApp.testDivide" />
-        <item itemvalue="JUnit.StudentScheduleApp.divide" />
-        <item itemvalue="JUnit.StudentScheduleApp.test" />
+        <item itemvalue="JUnit.GUIView.GUIViewTest" />
+        <item itemvalue="应用程序.JDialogExample" />
+        <item itemvalue="JUnit.GUIView.LoginView" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +217,11 @@
       <workItem from="1680837781461" duration="493000" />
       <workItem from="1680838362315" duration="6641000" />
       <workItem from="1680846639989" duration="40394000" />
+      <workItem from="1680966951809" duration="18915000" />
+      <workItem from="1681043241661" duration="3149000" />
+      <workItem from="1681123609573" duration="29000" />
+      <workItem from="1681563754363" duration="2660000" />
+      <workItem from="1681573049735" duration="2736000" />
     </task>
     <task id="LOCAL-00001" summary="for test">
       <created>1680599903402</created>

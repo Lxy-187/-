@@ -42,7 +42,8 @@ public class MainView {
         System.out.println("=============登录界面=============");
         System.out.print("请输入用户名: ");
         String username = scanner.next();
-        String password = MyUtils.readPassword("请输入密码: ");
+        System.out.print("请输入密码: ");
+        String password = scanner.next();
         String role = courseService.login(username,password);
         if(role.equals("admin")){
             adminView();
@@ -90,7 +91,4 @@ public class MainView {
         String courseName = scanner.next();
         courseService.findCourse(courseName);
     }
-
-
-
 }

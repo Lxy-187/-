@@ -28,9 +28,5 @@ public class MyUtils {
         }
     }
 
-    public static String readPassword(String prompt){
-        Console console = System.console();
-        char[] password = console.readPassword(prompt);
-        return new String(password);
-    }
+
 }
