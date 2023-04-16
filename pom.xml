@@ -24,6 +24,16 @@
             <version>4.13.2</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.cloventt</groupId>
+            <artifactId>intervalTree</artifactId>
+            <version>2.0.3</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

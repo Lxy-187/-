@@ -2,7 +2,7 @@ package com.lzw.studentschedule.service;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONReader;
-import com.lzw.studentschedule.domain.User;
+import com.lzw.studentschedule.domain.Student;
 import java.io.*;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
 import com.lzw.studentschedule.domain.Course;
 import com.alibaba.fastjson.JSON;
 public class CourseService {
-    HashMap<String,User> userMap = new HashMap<>();
+    HashMap<String,Student> userMap = new HashMap<>();
     HashMap<String,Course> courseMap = new HashMap<>();
     User user;
     final String USER_DATA_PATH = "resources/userdata.json";
@@ -42,11 +42,11 @@ public class CourseService {
         }
     }
     public void loadUserData() {
-        User[] users = new User[0];
+       User[] users = newUser[0];
         //将同目录下的userdata.json文件读取到userMap中
         try {
             String json = Files.readString(Paths.get(USER_DATA_PATH));
-            users = JSON.parseObject(json, User[].class);
+            users = JSON.parseObject(json,User[].class);
 
         } catch (FileNotFoundException e) {
             System.out.println("学生用户数据文件不存在或者路径错误");
