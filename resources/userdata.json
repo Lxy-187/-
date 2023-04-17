@@ -33,9 +33,17 @@
 	},
 	{
 		"courseselected":[
-			
+			"计算机网络",
+			"计算机组成原理"
 		],
 		"password":"123",
 		"username":"Lxyten"
+	},
+	{
+		"courseselected":[
+			
+		],
+		"password":"123",
+		"username":"覃富荣"
 	}
 ]

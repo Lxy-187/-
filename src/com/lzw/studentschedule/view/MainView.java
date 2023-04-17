@@ -1,6 +1,7 @@
 package com.lzw.studentschedule.view;
-import com.lzw.studentschedule.domain.CourseManager;
-import com.lzw.studentschedule.domain.StudentManager;
+import com.lzw.studentschedule.domain.Student;
+import com.lzw.studentschedule.manager.CourseManager;
+import com.lzw.studentschedule.manager.StudentManager;
 import com.lzw.studentschedule.utils.MyUtils;
 
 import java.util.Scanner;
@@ -10,6 +11,7 @@ public class MainView {
     private Scanner scanner = new Scanner(System.in);
     private StudentManager studentManager = StudentManager.getInstance();
     private CourseManager courseManager = CourseManager.getInstance();
+    private Student student;
     public void mainView(){
         boolean flag = true;
 
@@ -58,6 +60,7 @@ public class MainView {
         if(username.equals("admin") && password.equals("admin")){
             adminView();
         }else if(studentManager.isStudent(username,password)){
+            student = studentManager.getStudent(username);
             userView();
         }else{
             System.out.println("用户名或密码错误");
@@ -76,8 +79,8 @@ public class MainView {
         while(flag){
             System.out.println("==========欢迎进入学生界面==========");
             System.out.println("1.查找课程信息");
-            System.out.println("2.查看今日课程");
-            System.out.println("3.设置活动闹钟");
+            System.out.println("2.选择课程");
+            System.out.println("3.取消选课");
             System.out.println("4.查看临时事务信息");
             System.out.println("5.日程导航");
             System.out.print("请输入你的选择: ");
@@ -87,6 +90,10 @@ public class MainView {
                     findCourseView();
                     break;
                 case 2:
+                    selectCourseView();
+                    break;
+                case 3:
+                    removeCourseView();
                     break;
                 default:
                     System.out.println("输入错误，请重新输入");
@@ -100,6 +107,28 @@ public class MainView {
         String courseName = scanner.next();
         if(courseManager.isCourse(courseName)) {
             System.out.println(courseManager.getCourse(courseName));
+        }else{
+            System.out.println("课程不存在");
+        }
+    }
+    void selectCourseView(){
+        System.out.println("=============选择课程=============");
+        System.out.print("请输入课程名称:");
+        String courseName = scanner.next();
+        if(courseManager.isCourse(courseName)) {
+            studentManager.addCourseToStudent(student,courseName);
+            System.out.println("选择成功");
+        }else{
+            System.out.println("课程不存在");
+        }
+    }
+    void removeCourseView(){
+        System.out.println("=============取消选课=============");
+        System.out.print("请输入课程名称:");
+        String courseName = scanner.next();
+        if(courseManager.isCourse(courseName)) {
+            studentManager.removeCourseFromStudent(student,courseName);
+            System.out.println("取消成功");
         }else{
             System.out.println("课程不存在");
         }

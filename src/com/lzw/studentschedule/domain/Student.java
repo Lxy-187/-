@@ -22,7 +22,12 @@ public class Student {
     public void setCourseselected(ArrayList<String> courseselected) {
         this.courseselected = courseselected;
     }
-
+    public void addCourse(String course){
+        courseselected.add(course);
+    }
+    public void removeCourse(String course){
+        courseselected.remove(course);
+    }
     public String getUsername(){
         return username;
     }
