@@ -1,23 +1,19 @@
 package com.lzw.studentschedule.view;
-import com.lzw.studentschedule.domain.Course;
-import com.lzw.studentschedule.domain.User;
-import com.lzw.studentschedule.service.CourseService;
+import com.lzw.studentschedule.domain.CourseManager;
+import com.lzw.studentschedule.domain.StudentManager;
 import com.lzw.studentschedule.utils.MyUtils;
-import java.io.Console;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.Scanner;
 
 public class MainView {
     private int choice;
     private Scanner scanner = new Scanner(System.in);
-    private CourseService courseService = new CourseService();
-
+    private StudentManager studentManager = StudentManager.getInstance();
+    private CourseManager courseManager = CourseManager.getInstance();
     public void mainView(){
         boolean flag = true;
 
         System.out.println("======欢迎使用学生日程管理系统======");
-        courseService.loadUserData();
         while(flag){
             System.out.println("\t\t\t1.登录");
             System.out.println("\t\t\t2.注册");
@@ -29,7 +25,7 @@ public class MainView {
                     loginView();
                     break;
                 case 2:
-                    System.out.println("谢谢使用，再见");
+                    registerView();
                     flag = false;
                     break;
                 default:
@@ -38,16 +34,30 @@ public class MainView {
             }
         }
     }
+    public void registerView(){
+        System.out.println("=============注册界面=============");
+        System.out.print("请输入用户名: ");
+        String username = scanner.next();
+        System.out.print("请输入密码: ");
+        String password = scanner.next();
+        if(studentManager.isStudentName(username)){
+            System.out.println("用户名已存在");
+            registerView();
+        }else{
+            studentManager.addStudent(username,password);
+            System.out.println("注册成功");
+            mainView();
+        }
+    }
     void loginView(){
         System.out.println("=============登录界面=============");
         System.out.print("请输入用户名: ");
         String username = scanner.next();
         System.out.print("请输入密码: ");
         String password = scanner.next();
-        String role = courseService.login(username,password);
-        if(role.equals("admin")){
+        if(username.equals("admin") && password.equals("admin")){
             adminView();
-        }else if(role.equals("user")){
+        }else if(studentManager.isStudent(username,password)){
             userView();
         }else{
             System.out.println("用户名或密码错误");
@@ -77,7 +87,6 @@ public class MainView {
                     findCourseView();
                     break;
                 case 2:
-                    courseService.remindTodayCourse();
                     break;
                 default:
                     System.out.println("输入错误，请重新输入");
@@ -89,6 +98,10 @@ public class MainView {
         System.out.println("=============查看课程信息=============");
         System.out.print("请输入课程名称:");
         String courseName = scanner.next();
-        courseService.findCourse(courseName);
+        if(courseManager.isCourse(courseName)) {
+            System.out.println(courseManager.getCourse(courseName));
+        }else{
+            System.out.println("课程不存在");
+        }
     }
 }

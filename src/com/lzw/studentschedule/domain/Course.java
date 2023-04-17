@@ -21,10 +21,9 @@ public class Course implements Comparable<Course> {
         this.courseTime = TimeSlot.of(courseTime);
     }
     //输出内容用中文
-    public void printCourse(){
-        System.out.println("课程名称：" + courseName);
-        System.out.println("课程地点：" + courseLocation);
-        System.out.println("课程时间：" + courseDay.getDayName() + "第" + courseTime + "节");
+    @Override
+    public String toString(){
+        return  "课程名称：" + courseName+ "\n课程地点：" + courseLocation+"\n课程时间：" + courseDay.getDayName() + "\n第" + courseTime + "节";
     }
     @Override
     public int compareTo(Course o) {

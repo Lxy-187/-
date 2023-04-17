@@ -1,24 +1,41 @@
 [
-  {
-    "username":"admin",
-    "password":"123456",
-    "role":"admin"
-  },
-  {
-    "username":"曾德桢",
-    "password":"666",
-    "role":"user",
-    "courseselected": ["计算机网络","计算机组成原理","学术英语"]
-  },
-  {
-    "username":"bob",
-    "password":"asdfgh",
-    "role":"user"
-  },
-  {
-    "username":"王哲",
-    "password":"wangzhe521",
-    "role":"user",
-    "courseselected": ["计算机网络","计算机组成原理","学术英语"]
-  }
+	{
+		"courseselected":[
+			
+		],
+		"password":"123456",
+		"username":"admin"
+	},
+	{
+		"courseselected":[
+			"计算机网络",
+			"计算机组成原理",
+			"学术英语"
+		],
+		"password":"666",
+		"username":"曾德桢"
+	},
+	{
+		"courseselected":[
+			
+		],
+		"password":"asdfgh",
+		"username":"bob"
+	},
+	{
+		"courseselected":[
+			"计算机网络",
+			"计算机组成原理",
+			"学术英语"
+		],
+		"password":"wangzhe521",
+		"username":"王哲"
+	},
+	{
+		"courseselected":[
+			
+		],
+		"password":"123",
+		"username":"Lxyten"
+	}
 ]

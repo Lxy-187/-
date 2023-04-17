@@ -1,9 +1,9 @@
 package com.lzw.studentschedule.domain;
 
-public class Admin implements User {
+public class Admin {
     private String username;
     private String password;
-    public Admin(String username, String password, String role){
+    public Admin(String username, String password){
         this.username = username;
         this.password = password;
     }
@@ -12,8 +12,5 @@ public class Admin implements User {
     }
     public String getPassword(){
         return password;
-    }
-    public String getRole(){
-        return "Admin";
     }
 }

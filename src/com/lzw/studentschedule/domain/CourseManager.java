@@ -1,7 +1,6 @@
-package com.lzw.studentschedule.service;
+package com.lzw.studentschedule.domain;
 
 import com.alibaba.fastjson.JSON;
-import com.lzw.studentschedule.domain.Course;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,7 +11,10 @@ import java.util.HashMap;
 
 public class CourseManager {
     private static final String COURSE_DATA_PATH = "resources/coursedata.json";
-    private ArrayList<Course> courseList = new ArrayList<>();
+    private static CourseManager courseManager = new CourseManager();
+    public static CourseManager getInstance(){
+        return courseManager;
+    }
     private HashMap<String,Course> coursePool = new HashMap<>();
     public CourseManager(){
         Course[] courses = new Course[0];
@@ -25,7 +27,7 @@ public class CourseManager {
             throw new RuntimeException(e);
         }
         for (Course course : courses) {
-            courseList.set(course.getCourseID(),course);
+            coursePool.put(course.getCourseName(),course);
         }
 
     }
@@ -36,6 +38,9 @@ public class CourseManager {
         Course course = Course.of(courseName,courseDay,courseTime);
         coursePool.put(courseName,course);
         return course;
+    }
+    public boolean isCourse(String courseName){
+        return coursePool.containsKey(courseName);
     }
     public Course getCourse(String courseName){
         return coursePool.get(courseName);
